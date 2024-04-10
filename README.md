@@ -37,12 +37,12 @@ The React, Redux Toolkit, and Tailwind CSS-powered book e-commerce website offer
   Deployed link: https://mybook-web.netlify.app/
 ### Some Images:
   # For Destop size
-  ![pic](./screenshot/img1.jpg);
-  ![pic](./screenshot/img2.jpg);
+  ![pic](./screenshot/img1.jpg)
+  ![pic](./screenshot/img2.jpg)
 
   # For Mobile Screen
-  ![pic](./screenshot/img4.jpg);
-  ![pic](./screenshot/img3.jpg);
+  ![pic](./screenshot/img4.jpg)
+  ![pic](./screenshot/img3.jpg)
   
 
   
