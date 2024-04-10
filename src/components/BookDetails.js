@@ -92,13 +92,13 @@ function BookDetails() {
           <div className="flex">
             <div className='mr-8 text-gray-500 text-["16px"]'> Preview Link</div>
             <div className=' max-w-fit  overflow-auto text-["16"] text-opacity-20 '>
-           <a href={item.volumeInfo.previewLink} target="_blank" className="text-blue-700 underline" >Preview</a>
+           <a href={item.volumeInfo.previewLink} rel="noopener noreferrer" target="_blank" className="text-blue-700 underline" >Preview</a>
             </div>
           </div>
           <div className="flex">
             <div className='mr-8 text-gray-500 text-["16px"]'> More info</div>
             <div className=' max-w-fit  overflow-auto text-["16"] text-opacity-20 '>
-           <a href={item.volumeInfo.previewLink} target="_blank" className="text-blue-700 underline" >More Info</a>
+           <a href={item.volumeInfo.previewLink} rel="noopener noreferrer" target="_blank" className="text-blue-700 underline" >More Info</a>
             </div>
           </div>
         </div>
