@@ -23,16 +23,18 @@ function Filter() {
   };
 
   return (
-    <div className="w-full   h-20 p-3      bg-slate-500  ">
-      <div className=" w-full  flex  justify-center   font-semibold text-white ">
-        <div className="flex justify-center px-3 text-lg  items-center bg-slate-50 focus-within:bg-white">
+    <div className="w-[99%] flex h-24 justify-center items-center    bg-slate-500  ">
+      <div className="   flex justify-center items-center font-thin  md:font-semibold text-white ">
+        <div className="flex">
+        <div className="flex  justify-center px-1 text-base   items-center bg-slate-50 focus-within:bg-white">
           <BiSearch className="text-gray-400 mr-2" />
           <input
+            
             value={userInput}
-            placeholder="Search for category and author"
+            placeholder="Search for category and author..."
             onChange={handleGenreChange}
             onKeyDown={handleKeyDown}
-            className="text-slate-500 bg-transparent border-none focus:outline-none"
+            className="text-slate-500 bg-transparent  text-xs w-44 md:w-60 border-none focus:outline-none"
           />
         </div>
         <button
@@ -42,6 +44,7 @@ function Filter() {
           <BiSearch className="mr-2" />
           Search
         </button>
+        </div>
       </div>
     </div>
   );
