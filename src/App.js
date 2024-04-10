@@ -3,16 +3,16 @@ import './App.css';
 import BookDetails from './components/BookDetails';
 import BookList from './components/BookList';
 import Filter from './components/Filter';
-import Header from './components/Header';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
-    <>
-      Hello  World
-      <Header/>
+    <div className=' bg-slate-700'>
+      
+      <Navbar/>
       <Filter/>
-      <BookList/>
       <BookDetails/>
+      <BookList/>
       {/* <BrowserRouter>
         <Routes>
           <Route path="/signup" element={< />} />
@@ -22,7 +22,7 @@ function App() {
           <Route path="/*" element={<h2 >404 page</h2>} />
         </Routes>
       </BrowserRouter> */}
-    </>
+    </div>
   );
 }
 
