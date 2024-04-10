@@ -49,8 +49,8 @@ export const  fetchItem= createAsyncThunk(
             state.filterInput=action.payload
           },
           toggleClick:(state,action)=>{
-            console.log(action.payload);
-               state.isClick= action.payload
+            // console.log(action.payload);
+               state.isClick= action.payload;
           }
     },
     extraReducers:(builder)=>{

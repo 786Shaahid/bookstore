@@ -2,7 +2,7 @@ import React from "react";
 import { ImPower } from "react-icons/im";
 import { AiFillStar } from "react-icons/ai";
 import {useDispatch,  useSelector } from "react-redux";
-import { bookActions } from "../redux/reducers/bookReducer";
+import { bookActions, fetchApi } from "../redux/reducers/bookReducer";
 
 function BookDetails() {
   const isClick=useSelector(state=> state.isClick);
@@ -19,7 +19,8 @@ function BookDetails() {
       <div class=" relative  top-20  mx-auto bg-white inset-x-0 w-80  md:w-3/4 min-h-60 gap-4 flex flex-col  md:flex-row p-3 rounded-xl    items-start">
         <button
           onClick={()=>{
-            dispatch(bookActions.toggleClick(!isClick))
+            dispatch(bookActions.toggleClick(!isClick));
+            dispatch(fetchApi());
           }}
           className="absolute top-0 right-0 m-2 md:m-4 text-gray-500 hover:text-gray-700"
         >

@@ -24,8 +24,8 @@ function Filter() {
 
   return (
     <div className="w-full   h-20 p-3      bg-slate-500  ">
-      <div className=" w-90 mr-20 flex justify-center  font-semibold text-white ">
-        <div className="flex justify-center px-3 ml-14 text-lg  items-center bg-slate-50 focus-within:bg-white">
+      <div className=" w-full  flex  justify-center   font-semibold text-white ">
+        <div className="flex justify-center px-3 text-lg  items-center bg-slate-50 focus-within:bg-white">
           <BiSearch className="text-gray-400 mr-2" />
           <input
             value={userInput}
