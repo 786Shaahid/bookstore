@@ -1,7 +1,7 @@
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-### hosted link :https://mybook-web.netlify.app/
+## Deployed URL :https://mybook-web.netlify.app/
 
 ## Available Scripts
 
@@ -34,6 +34,18 @@ The React, Redux Toolkit, and Tailwind CSS-powered book e-commerce website offer
 
 
 
+<<<<<<< HEAD
 ### Deployment :
 Deployed Link:https://mybook-web.netlify.app/
 
+=======
+### Deployment
+  Deployed link: https://mybook-web.netlify.app/
+### Some Images
+  ![pic]('./src/screenshot/img1');
+  ![pic]('./src/screenshot/img2');
+
+  
+
+  
+>>>>>>> b7dd14fd482994808cad80545b51345e180210db
