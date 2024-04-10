@@ -29,7 +29,7 @@ function Filter() {
           <BiSearch className="text-gray-400 mr-2" />
           <input
             value={userInput}
-            placeholder="Filter, category, author"
+            placeholder="Search for category and author"
             onChange={handleGenreChange}
             onKeyDown={handleKeyDown}
             className="text-slate-500 bg-transparent border-none focus:outline-none"
