@@ -33,19 +33,16 @@ The React, Redux Toolkit, and Tailwind CSS-powered book e-commerce website offer
 - Netlify- for hosting the project
 
 
-
-<<<<<<< HEAD
-### Deployment :
-Deployed Link:https://mybook-web.netlify.app/
-
-=======
 ### Deployment
   Deployed link: https://mybook-web.netlify.app/
-### Some Images
-  ![pic]('./src/screenshot/img1');
-  ![pic]('./src/screenshot/img2');
+### Some Images:
+  # For Destop size
+  ![pic](./screenshot/img1.jpg)
+  ![pic](./screenshot/img2.jpg)
 
+  # For Mobile Screen
+  ![pic](./screenshot/img4.jpg)
+  ![pic](./screenshot/img3.jpg)
   
 
   
->>>>>>> b7dd14fd482994808cad80545b51345e180210db
