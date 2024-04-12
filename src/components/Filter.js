@@ -1,29 +1,27 @@
-import React, { useState } from "react";
+// import React, { useState } from "react";
 import { BiSearch } from "react-icons/bi";
-import { useDispatch } from "react-redux";
+import { useDispatch,useSelector } from "react-redux";
 import { bookActions } from "../redux/reducers/bookReducer";
 
 function Filter() {
   const dispatch = useDispatch();
-  const [userInput, setUserInput] = useState(""); // Initial value
+  const userInput=useSelector(state=>state.filterInput)
 
   const handleGenreChange = (event) => {
-    setUserInput(event.target.value);
+    dispatch(bookActions.searchBookInput(event.target.value))
   };
   const handleClick = (e) => {
     e.preventDefault();
-    setUserInput("");
-    dispatch(bookActions.filterBookItem(userInput));
+    dispatch(bookActions.searchBookInput(''));
   };
   const handleKeyDown = (e) => {
     if (e.key === "Enter") {
-      setUserInput("");
-      dispatch(bookActions.filterBookItem(userInput));
+      dispatch(bookActions.searchBookInput(""));
     }
   };
 
   return (
-    <div className="w-[99%] flex h-24 justify-center items-center    bg-slate-500  ">
+    <div className="w-[100%] flex h-24 justify-center items-center    bg-slate-500  ">
       <div className="   flex justify-center items-center font-thin  md:font-semibold text-white ">
         <div className="flex">
         <div className="flex  justify-center px-1 text-base   items-center bg-slate-50 focus-within:bg-white">

@@ -16,13 +16,16 @@ const FilterBook = (input) => {
 };
 
 
+
+//  console.log(re  sults);
+
 function BookList() {
 
   const isClick=useSelector(state=> state.isClick)
   
   const dispatch = useDispatch();
   const items = useSelector(state => state.items);
-  const filterInput = useSelector(state => state.filterInput)
+  const filterInput = useSelector(state => state.filterInput);
   const bookList = items.filter(FilterBook(filterInput));
 
 
@@ -32,7 +35,7 @@ function BookList() {
 
 
   return (
-    <>
+    
       <div className=' w-full h-screen  overflow-auto bg-slate-750 flex pt-6  flex-wrap gap-6 justify-around items-center  p-1 ' >
        
         {
@@ -71,7 +74,7 @@ function BookList() {
           )):(<h1 className='text-xl font-bold text-white'>No Results</h1>)
         }
       </div>
-    </>
+    
   )
 }
 

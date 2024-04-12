@@ -1,6 +1,7 @@
 import {  createAsyncThunk, createSlice } from "@reduxjs/toolkit"
 import axios from "axios";
 
+
 // 1. INITIALIZE THE STATE 
    const initialState={
            error:'',
@@ -27,7 +28,7 @@ export const fetchApi = createAsyncThunk(
 export const  fetchItem= createAsyncThunk(
     "book/fetchItem",
     async (data, {fulfillWithValue, rejectWithValue }) => {
-      console.log(data);
+      // console.log(data);
       try {
         const response = await axios.get(data);
         return fulfillWithValue(response.data);
@@ -45,12 +46,12 @@ export const  fetchItem= createAsyncThunk(
     name:"book",
     initialState,
     reducers:{
-          filterBookItem:(state,action)=>{
-            state.filterInput=action.payload
-          },
+         
           toggleClick:(state,action)=>{
-            // console.log(action.payload);
                state.isClick= action.payload;
+          },
+          searchBookInput:(state,action)=>{
+            state.filterInput=action.payload
           }
     },
     extraReducers:(builder)=>{
